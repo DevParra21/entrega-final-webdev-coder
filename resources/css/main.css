@@ -1,0 +1,329 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Header */
+
+header{
+    background-color: #24262b;
+    padding: 15px;
+}
+
+.menu {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    
+ }
+
+ .menu-logo{
+    margin: 20px;
+ }
+
+ .menu-logo img{
+    width: 200px;
+ }
+
+ .menu-element {
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: 300;
+    margin-right: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+ }
+
+ button{
+    text-transform: uppercase;
+    background-color: darkcyan;
+    color: whitesmoke;
+    border-radius: 5px 5px ;
+    font-weight: 500;
+ }
+
+ .menu-button{
+    padding: 7px;
+ }
+
+ button:hover{
+    cursor: pointer;
+    background-color: darkgreen;
+ }
+
+ /* Footer */
+
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+
+
+ footer{
+    background-color: #24262b;
+    padding: 70px 0;
+  }
+
+  .footer-col{
+    width: 25%;
+    padding: 0 15px;
+ }
+
+ .footer-col h4{
+   font-size: 18px;
+   color: #ffffff;
+   text-transform: capitalize;
+   margin-top: 35px;
+   margin-bottom: 15px;
+   font-weight: 500;
+ }
+ 
+ .footer-col ul li a{
+   font-size: 16px;
+   color: #ffffff;
+   text-decoration: none;
+   font-weight: 300;
+   color: #bbbbbb;
+   display: block;
+   margin-bottom: 10px;
+ }
+
+ .footer-col ul li a:hover{
+   color: #ffffff;
+   padding-left: 8px;
+ }
+
+ .footer-col .social-links a{
+   display: inline-block;
+   height: 40px;
+   width: 40px;
+   background-color: rgba(255,255,255,0.2);
+   margin:0 10px 10px 0;
+   text-align: center;
+   line-height: 40px;
+   border-radius: 50%;
+   color: #ffffff;
+ }
+ .footer-col .social-links a:hover{
+   color: #24262b;
+   background-color: #ffffff;
+ }
+
+ /* main section */
+ .main-section{
+    display: inline-flex;
+ }
+
+ .section-element{
+    padding: 50px;
+    position: relative;
+    text-align: center;
+    width: 45%;
+    margin: 25px;
+ }
+
+ .section-element h2{
+    margin-bottom: 200px;
+    margin-top: 100px;
+    font-weight: 600;
+    font-size: 48px;
+ }
+
+ .section-element p{
+    width: 85%;
+    text-align: left;
+    letter-spacing: 1px;
+    left: 0;
+    margin-left: 50px;
+    text-transform: uppercase;
+ }
+
+ .section-button{
+    padding: 10px;
+    margin: 20px;
+    margin-top: 200px;
+    position: absolute;
+    right: 0;
+ }
+
+ /* Stats */
+ .statistics{
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: cadetblue;
+    width: 100%;
+    margin-bottom: 20%;
+ }
+
+ .stat-element{
+    padding: 50px 100px;
+    font-size: 28px;
+ }
+
+ /* History */
+ .section-title{
+    text-align: center;
+ }
+
+ .section-title h2{
+    margin-top: 100px;
+    text-transform: uppercase;
+    font-size: 52px;
+ }
+
+ .history-element{
+    margin: 100px 50px;
+ }
+
+ .history-element img{
+    margin: 20px;
+ }
+
+ /* Team */
+ .team{
+    display: inline-flex;
+    align-items: center;
+ }
+
+ .team div{
+    text-align: left;
+ }
+
+ .team div h3{
+    margin-bottom: 50px;
+    text-transform: uppercase;
+ }
+
+ /* Offices */
+
+ .carousell{
+    margin-top: 200px;
+
+    text-align: center;
+ }
+
+ .carousell img{
+    width: 800px;
+ }
+
+ .carousell .office-info{
+    margin-top: 30px;
+ }
+
+ .office-info h4{
+    text-transform: uppercase;
+ }
+
+ .map{
+    margin-top: 100px;
+    display: inline-flex;
+    align-items: end;
+    text-align: right;
+    margin-bottom: 100px;
+ }
+
+ .map span{
+    margin-right: 50px;
+ }
+
+ .map img:hover{
+    cursor: pointer;
+ }
+
+ /* Coupons */
+ .coupons{
+    display: inline-flex;
+ }
+
+ .container-coupon {
+    margin: 100px;
+
+  }
+
+.container-coupon:hover{
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.493);
+    cursor: pointer;
+}
+  
+  .card-coupon {
+    width: 400px;
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    padding: 10px 10px;
+    position: relative;
+  }
+  
+  .main-coupon,
+  .copy-button {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+  }
+  
+  .co-img img {
+    width: 100px;
+    align-items: center;
+  }
+  .vertical {
+    border-left: 3px dashed black;
+    height: 90%;
+    position: absolute;
+    left: 40%;
+  }
+  
+  .content h1 {
+    font-size: 35px;
+    color: #565656;
+  }
+  
+  .content h1 span {
+    font-size: 18px;
+  }
+
+  .content h2 {
+    font-size: 18px;
+    color: #565656;
+    text-transform: uppercase;
+  }
+  
+  .content p {
+    font-size: 16px;
+    color: #696969;
+  }
+  
+  .copy-button {
+    margin: 12px 0 -5px 0;
+    height: 45px;
+    border-radius: 4px;
+    padding: 0 5px;
+    border: 1px solid #e1e1e1;
+  }
+  
+  .copy-button input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .copy-button button {
+    padding: 5px 20px;
+    background-color: #02709b;
+    color: #fff;
+    border: 1px solid transparent;
+    margin-right: 10px;
+  }
+  
