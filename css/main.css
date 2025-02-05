@@ -162,11 +162,14 @@ header{
     background-color: cadetblue;
     width: 100%;
     margin-bottom: 20%;
+    height: 300px;
+    align-items: center;
  }
 
  .stat-element{
     padding: 50px 100px;
     font-size: 28px;
+    font-weight: bold;
  }
 
  /* History */
