@@ -148,6 +148,86 @@ header{
     margin: 20px;
  }
 
+ /* Offices */
+
+ .carousell{
+    margin-top: 200px;
+
+    text-align: center;
+ }
+
+ .carousell img{
+    width: 800px;
+ }
+
+ .carousell .office-info{
+    margin-top: 30px;
+ }
+
+ .office-info h4{
+    text-transform: uppercase;
+ }
+
+ .map{
+    margin-top: 100px;
+    align-items: end;
+    text-align: right;
+    margin-bottom: 100px;
+    margin-right: 55px;
+ }
+
+ .map span{
+    margin-right: 50px;
+ }
+
+ .map img:hover{
+    cursor: pointer;
+ }
+
+ /* Coupons */
+ .coupon {
+    background-color: rgb(212, 212, 212);
+    border: 2px dashed black;
+    width: 30%;
+    border-radius: 3px;
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 5px 5px 10px;
+  }
+  
+  .container-coupon {
+    padding:  16px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .container-coupon>h1{
+    font-size: 2rem;
+  }
+  
+  .expire {
+    background-color: rgba(235, 142, 114, 0.61);
+    border-radius: 5px;
+  }
+  
+  hr {
+    border: none;
+    border-top: 2px dashed rgb(185, 185, 185);
+    height: 3px;
+    width: 100%;
+  }
+  
+  .coupon-text{
+    font-size: small;
+    margin: 10px;
+  }
+ 
+  .coupon-img{
+    width: 200px;
+     align-items: center;
+  }
+
  /* media queries */
 
  @media (min-width: 200px) {
@@ -206,4 +286,12 @@ header{
         display: block;
     }
 
+    .carousell img{
+        width: 350px;
+        border: 1px solid #000;
+    }
+
+    .coupon{
+        width: 100%;
+    }
  }
