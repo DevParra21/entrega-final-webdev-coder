@@ -1,65 +1,85 @@
 *{
-    padding: 0px;
     margin: 0px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0px;
 }
+
 
 /* Header */
-
 header{
     background-color: #24262b;
-    padding: 15px;
 }
 
-.menu {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-transform: uppercase;
-    padding-top: 20px;
-    
+ .nav-link{
+    color: white;
+    float: right;
  }
 
- .menu-logo{
-    margin: 20px;
+ .nav-link:hover{
+    color: rgb(65, 94, 255);
  }
 
- .menu-logo img{
-    width: 200px;
+ .navbar-toggler{
+    background-color: rgb(65, 94, 255);
  }
 
- .menu-element {
+ /* main section */
+ .main-section{
+    display: inline-flex;
+ }
+
+ .section-element{
+    padding: 50px;
+    position: relative;
+    text-align: center;
+    width: 45%;
+    margin: 25px;
+ }
+
+ .section-element h2{
+    margin-bottom: 200px;
+    margin-top: 100px;
+    font-weight: 600;
+    font-size: 48px;
+ }
+
+ .section-element p{
+    width: 85%;
+    text-align: left;
     letter-spacing: 1px;
-    font-size: 14px;
-    margin-left: 10px;
-    font-weight: 300;
-    margin-right: 20px;
-    text-decoration: none;
-    color: whitesmoke;
- }
-
- button{
+    left: 0;
+    margin-left: 50px;
     text-transform: uppercase;
-    background-color: darkcyan;
-    color: whitesmoke;
-    border-radius: 5px 5px ;
-    font-weight: 500;
  }
 
- .menu-button{
-    padding: 7px;
+ .section-button{
+    padding: 10px;
+    margin: 20px;
+    margin-top: 200px;
+    position: absolute;
+    right: 0;
  }
 
- button:hover{
-    cursor: pointer;
-    background-color: darkgreen;
+ /* Stats */
+ .statistics{
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: cadetblue;
+    width: 100%;
+    margin-bottom: 20%;
+    height: 300px;
+    align-items: center;
  }
+
+ .stat-element{
+    padding: 50px 100px;
+    font-size: 28px;
+    font-weight: bold;
+ }
+
 
  /* Footer */
 
-  .row{
+ .row{
     display: flex;
     flex-wrap: wrap;
   }
@@ -118,72 +138,9 @@ header{
    background-color: #ffffff;
  }
 
- /* main section */
- .main-section{
-    display: inline-flex;
- }
-
- .section-element{
-    padding: 50px;
-    position: relative;
-    text-align: center;
-    width: 45%;
-    margin: 25px;
- }
-
- .section-element h2{
-    margin-bottom: 200px;
-    margin-top: 100px;
-    font-weight: 600;
-    font-size: 48px;
- }
-
- .section-element p{
-    width: 85%;
-    text-align: left;
-    letter-spacing: 1px;
-    left: 0;
-    margin-left: 50px;
-    text-transform: uppercase;
- }
-
- .section-button{
-    padding: 10px;
-    margin: 20px;
-    margin-top: 200px;
-    position: absolute;
-    right: 0;
- }
-
- /* Stats */
- .statistics{
-    display: inline-flex;
-    justify-content: space-between;
-    background-color: cadetblue;
-    width: 100%;
-    margin-bottom: 20%;
-    height: 300px;
-    align-items: center;
- }
-
- .stat-element{
-    padding: 50px 100px;
-    font-size: 28px;
-    font-weight: bold;
- }
-
- /* History */
- .section-title{
-    text-align: center;
- }
-
- .section-title h2{
-    margin-top: 100px;
-    text-transform: uppercase;
-    font-size: 52px;
- }
-
+ /*History*/
  .history-element{
+    text-align: center;
     margin: 100px 50px;
  }
 
@@ -191,112 +148,62 @@ header{
     margin: 20px;
  }
 
- /* Team */
- .team{
-    display: inline-flex;
-    align-items: center;
+ /* media queries */
+
+ @media (min-width: 200px) {
+    .main-section{
+        display: inline-block;
+    }
+
+    .section-element{
+        font-size: 16px;
+        width: 100%;
+        align-items: left;
+        text-align: center;
+    }
+
+    .section-element img{
+        width: 250px;
+    }
  }
 
- .team div{
-    text-align: left;
- }
+ @media(max-width: 700px){
+    .statistics{
+        display: inline-block;
+        height: 300px;
+        background-color: cadetblue;
+    }
 
- .team div h3{
-    margin-bottom: 50px;
-    text-transform: uppercase;
- }
+    .stat-element{
+        height: 200px;
+        background-color: cadetblue;
+    }
 
- /* Offices */
+    .footer-col .footer-map{
+        margin-top: 50px;
+        width: 150px;
+    }
 
- .carousell{
-    margin-top: 200px;
+    .footer-col h4{
+        font-size: 12px;
+    }
 
-    text-align: center;
- }
+    .footer-col ul li a{
+        font-size: 12px;
+        float:left
+    }
 
- .carousell img{
-    width: 800px;
- }
+    .social-links{
+        display: inline-flex;
+    }
 
- .carousell .office-info{
-    margin-top: 30px;
- }
+    .history-element{
+        align-content: center;
+    }
 
- .office-info h4{
-    text-transform: uppercase;
- }
+    .history-element img{
+        width: 250px;
+        display: block;
+    }
 
- .map{
-    margin-top: 100px;
-    display: inline-flex;
-    align-items: end;
-    text-align: right;
-    margin-bottom: 100px;
  }
-
- .map span{
-    margin-right: 50px;
- }
-
- .map img:hover{
-    cursor: pointer;
- }
-
- /* Coupons */
- .coupon {
-   background-color: rgb(212, 212, 212);
-   border: 2px dashed black;
-   width: 30%;
-   border-radius: 3px;
-   margin: 20px;
-   text-align: center;
-   display: inline-block;
-   box-shadow: 5px 5px 10px;
- }
- 
- .container-coupon {
-   padding:  16px;
-   margin-top: 15px;
-   margin-bottom: 10px;
- }
- 
- .container-coupon>h1{
-   font-size: 2rem;
- }
- 
- .expire {
-   background-color: rgba(235, 142, 114, 0.61);
-   border-radius: 5px;
- }
- 
- hr {
-   border: none;
-   border-top: 2px dashed rgb(185, 185, 185);
-   height: 3px;
-   width: 100%;
- }
- 
- .coupon-text{
-   font-size: small;
-   margin: 10px;
- }
-
- .coupon-img{
-   width: 200px;
-    align-items: center;
- }
-  
-
- /* Header CSS */
-  .nav-link{
-   color: antiquewhite;
-  }
-
-  .nav-link.active{
-   color: rgb(255, 174, 0) !important;
-  }
-
-  .nav-link:hover{
-   color: #ffffff;
-   font-size: large;
-  }
