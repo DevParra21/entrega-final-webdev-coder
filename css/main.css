@@ -199,4 +199,51 @@ footer .footer-col .social-links a:hover {
   cursor: pointer;
 }
 
+@media screen and (min-width: 200px) {
+  .main-section {
+    display: inline-block;
+  }
+  .main-section .section-element {
+    font-size: 16px;
+    width: 100%;
+    align-items: left;
+    text-align: center;
+  }
+  .main-section .section-element img {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .statistics {
+    display: inline-block;
+    height: 300px;
+    background-color: cadetblue;
+  }
+  .statistics .stat-element {
+    height: 200px;
+    background-color: cadetblue;
+  }
+  .footer-col .footer-map {
+    margin-top: 50px;
+    width: 150px;
+  }
+  .footer-col h4 {
+    font-size: 12px;
+  }
+  .footer-col ul li a {
+    font-size: 12px;
+    float: left;
+  }
+  .footer-col .social-links {
+    display: inline-flex;
+  }
+  .history-element {
+    align-content: center;
+  }
+  .history-element img {
+    width: 250px;
+    display: block;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
