@@ -244,6 +244,14 @@ footer .footer-col .social-links a:hover {
     width: 250px;
     display: block;
   }
+  .carousell img {
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px rgb(65, 94, 255);
+  }
+  .coupon {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
