@@ -1,0 +1,5 @@
+@import "../utils/mixin";
+
+.coupon{
+    @include coupon;
+}

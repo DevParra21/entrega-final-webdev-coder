@@ -1,0 +1,46 @@
+@mixin coupon{
+    background-color: rgb(212, 212, 212);
+    border: 2px dashed black;
+    width: 30%;
+    border-radius: 3px;
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 5px 5px 10px;
+
+    .container-coupon {
+        padding:  16px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        >h1{
+            font-size: 2rem;
+        }
+
+        .expire {
+            background-color: rgba(235, 142, 114, 0.61);
+            border-radius: 5px;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px dashed rgb(185, 185, 185);
+            height: 3px;
+            width: 100%;
+        }
+          
+        .coupon-text{
+            font-size: small;
+            margin: 10px;
+        }
+         
+        .coupon-img{
+            width: 200px;
+            align-items: center;
+        }
+      }
+}
+
+@mixin img-shadow($lengthX, $lengthY, $blur, $color){
+    border-radius: 20px;
+    box-shadow: $lengthX $lengthY $blur $color;
+};

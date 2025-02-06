@@ -1,27 +1,28 @@
 //comentario en Sass
-
 /*comentario en CSS*/
 
-*{
-    margin: 0px;
-    padding: 0px;
-}
+//imports
+@import "general/reset";
+@import "utils/variables";
+@import "utils/mixin";
+@import "general/coupon";
 
 header{
-    background-color: #24262b;
+    background-color: $main-color;
 }
 
  .nav-link{
-    color: white;
+    color: $color-white;
     float: right;
 
     &:hover{
-        color: rgb(65, 94, 255);
+        color: $secondary-color;
+        margin-left: 5px;
     }
  }
 
  .navbar-toggler{
-    background-color: rgb(65, 94, 255);
+    background-color: $secondary-color;
  }
 
   /* main section */
@@ -89,7 +90,7 @@ header{
 
         h4{
             font-size: 18px;
-            color: #ffffff;
+            color: $color-white;
             text-transform: capitalize;
             margin-top: 35px;
             margin-bottom: 15px;
@@ -100,7 +101,7 @@ header{
             li{
                 a{
                     font-size: 16px;
-                    color: #ffffff;
+                    color: $color-white;
                     text-decoration: none;
                     font-weight: 300;
                     color: #bbbbbb;
@@ -108,7 +109,7 @@ header{
                     margin-bottom: 10px;
 
                     &:hover{
-                        color: #ffffff;
+                        color: $color-white;
                         padding-left: 8px;
                     }
                 }
@@ -125,11 +126,11 @@ header{
                 text-align: center;
                 line-height: 40px;
                 border-radius: 50%;
-                color: #ffffff;
+                color: $color-white;
 
                 &:hover{
-                    color: #24262b;
-                    background-color: #ffffff;
+                    color: $main-color;
+                    background-color: $color-white;
                 }
             }
         }
@@ -142,6 +143,7 @@ header{
     margin: 100px 50px;
     img{
         margin: 20px;
+        @include img-shadow(15px, 10px, 30px, $secondary-color);
     }
  }
 
@@ -152,6 +154,8 @@ header{
     text-align: center;
     img{
         width: 800px;
+        @include img-shadow(15px, 10px, 30px, $secondary-color);
+
     }
     .office-info{
         margin-top: 30px;
@@ -175,46 +179,3 @@ header{
         cursor: pointer;
     }
  }
-
- /* Coupons */
- .coupon {
-    background-color: rgb(212, 212, 212);
-    border: 2px dashed black;
-    width: 30%;
-    border-radius: 3px;
-    margin: 20px;
-    text-align: center;
-    display: inline-block;
-    box-shadow: 5px 5px 10px;
-    .container-coupon {
-        padding:  16px;
-        margin-top: 15px;
-        margin-bottom: 10px;
-        >h1{
-            font-size: 2rem;
-        }
-
-        .expire {
-            background-color: rgba(235, 142, 114, 0.61);
-            border-radius: 5px;
-        }
-
-        hr {
-            border: none;
-            border-top: 2px dashed rgb(185, 185, 185);
-            height: 3px;
-            width: 100%;
-        }
-          
-        .coupon-text{
-            font-size: small;
-            margin: 10px;
-        }
-         
-        .coupon-img{
-            width: 200px;
-            align-items: center;
-        }
-      }
-
-  }
