@@ -1,297 +1,197 @@
-*{
-    margin: 0px;
-    padding: 0px;
+/*comentario en CSS*/
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-
-/* Header */
-header{
-    background-color: #24262b;
+header {
+  background-color: #24262b;
 }
 
- .nav-link{
-    color: white;
-    float: right;
- }
+.nav-link {
+  color: white;
+  float: right;
+}
+.nav-link:hover {
+  color: rgb(65, 94, 255);
+}
 
- .nav-link:hover{
-    color: rgb(65, 94, 255);
- }
+.navbar-toggler {
+  background-color: rgb(65, 94, 255);
+}
 
- .navbar-toggler{
-    background-color: rgb(65, 94, 255);
- }
+/* main section */
+.main-section {
+  display: inline-flex;
+}
 
- /* main section */
- .main-section{
-    display: inline-flex;
- }
+.section-element {
+  padding: 50px;
+  position: relative;
+  text-align: center;
+  width: 45%;
+  margin: 25px;
+}
+.section-element h2 {
+  margin-bottom: 200px;
+  margin-top: 100px;
+  font-weight: 600;
+  font-size: 48px;
+}
+.section-element p {
+  width: 85%;
+  text-align: left;
+  letter-spacing: 1px;
+  left: 0;
+  margin-left: 50px;
+  text-transform: uppercase;
+}
 
- .section-element{
-    padding: 50px;
-    position: relative;
-    text-align: center;
-    width: 45%;
-    margin: 25px;
- }
+.section-button {
+  padding: 10px;
+  margin: 20px;
+  margin-top: 200px;
+  position: absolute;
+  right: 0;
+}
 
- .section-element h2{
-    margin-bottom: 200px;
-    margin-top: 100px;
-    font-weight: 600;
-    font-size: 48px;
- }
+/* Stats */
+.statistics {
+  display: inline-flex;
+  justify-content: space-between;
+  background-color: cadetblue;
+  width: 100%;
+  margin-bottom: 20%;
+  height: 300px;
+  align-items: center;
+}
 
- .section-element p{
-    width: 85%;
-    text-align: left;
-    letter-spacing: 1px;
-    left: 0;
-    margin-left: 50px;
-    text-transform: uppercase;
- }
+.stat-element {
+  padding: 50px 100px;
+  font-size: 28px;
+  font-weight: bold;
+}
 
- .section-button{
-    padding: 10px;
-    margin: 20px;
-    margin-top: 200px;
-    position: absolute;
-    right: 0;
- }
+/*Footer*/
+footer {
+  background-color: #24262b;
+  padding: 70px 0;
+}
+footer .footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+footer .footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+footer .footer-col ul li a {
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  margin-bottom: 10px;
+}
+footer .footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+footer .footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+}
+footer .footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
 
- /* Stats */
- .statistics{
-    display: inline-flex;
-    justify-content: space-between;
-    background-color: cadetblue;
-    width: 100%;
-    margin-bottom: 20%;
-    height: 300px;
-    align-items: center;
- }
+/*History*/
+.history-element {
+  text-align: center;
+  margin: 100px 50px;
+}
+.history-element img {
+  margin: 20px;
+}
 
- .stat-element{
-    padding: 50px 100px;
-    font-size: 28px;
-    font-weight: bold;
- }
+/* Offices */
+.carousell {
+  margin-top: 200px;
+  text-align: center;
+}
+.carousell img {
+  width: 800px;
+}
+.carousell .office-info {
+  margin-top: 30px;
+}
+.carousell .office-info h4 {
+  text-transform: uppercase;
+}
 
+.map {
+  margin-top: 100px;
+  align-items: end;
+  text-align: right;
+  margin-bottom: 100px;
+  margin-right: 55px;
+}
+.map span {
+  margin-right: 50px;
+}
+.map:hover {
+  cursor: pointer;
+}
 
- /* Footer */
+/* Coupons */
+.coupon {
+  background-color: rgb(212, 212, 212);
+  border: 2px dashed black;
+  width: 30%;
+  border-radius: 3px;
+  margin: 20px;
+  text-align: center;
+  display: inline-block;
+  box-shadow: 5px 5px 10px;
+}
+.coupon .container-coupon {
+  padding: 16px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.coupon .container-coupon > h1 {
+  font-size: 2rem;
+}
+.coupon .container-coupon .expire {
+  background-color: rgba(235, 142, 114, 0.61);
+  border-radius: 5px;
+}
+.coupon .container-coupon hr {
+  border: none;
+  border-top: 2px dashed rgb(185, 185, 185);
+  height: 3px;
+  width: 100%;
+}
+.coupon .container-coupon .coupon-text {
+  font-size: small;
+  margin: 10px;
+}
+.coupon .container-coupon .coupon-img {
+  width: 200px;
+  align-items: center;
+}
 
- .row{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  ul{
-    list-style: none;
-  }
-
-
- footer{
-    background-color: #24262b;
-    padding: 70px 0;
-  }
-
-  .footer-col{
-    width: 25%;
-    padding: 0 15px;
- }
-
- .footer-col h4{
-   font-size: 18px;
-   color: #ffffff;
-   text-transform: capitalize;
-   margin-top: 35px;
-   margin-bottom: 15px;
-   font-weight: 500;
- }
- 
- .footer-col ul li a{
-   font-size: 16px;
-   color: #ffffff;
-   text-decoration: none;
-   font-weight: 300;
-   color: #bbbbbb;
-   display: block;
-   margin-bottom: 10px;
- }
-
- .footer-col ul li a:hover{
-   color: #ffffff;
-   padding-left: 8px;
- }
-
- .footer-col .social-links a{
-   display: inline-block;
-   height: 40px;
-   width: 40px;
-   background-color: rgba(255,255,255,0.2);
-   margin:0 10px 10px 0;
-   text-align: center;
-   line-height: 40px;
-   border-radius: 50%;
-   color: #ffffff;
- }
- .footer-col .social-links a:hover{
-   color: #24262b;
-   background-color: #ffffff;
- }
-
- /*History*/
- .history-element{
-    text-align: center;
-    margin: 100px 50px;
- }
-
- .history-element img{
-    margin: 20px;
- }
-
- /* Offices */
-
- .carousell{
-    margin-top: 200px;
-
-    text-align: center;
- }
-
- .carousell img{
-    width: 800px;
- }
-
- .carousell .office-info{
-    margin-top: 30px;
- }
-
- .office-info h4{
-    text-transform: uppercase;
- }
-
- .map{
-    margin-top: 100px;
-    align-items: end;
-    text-align: right;
-    margin-bottom: 100px;
-    margin-right: 55px;
- }
-
- .map span{
-    margin-right: 50px;
- }
-
- .map img:hover{
-    cursor: pointer;
- }
-
- /* Coupons */
- .coupon {
-    background-color: rgb(212, 212, 212);
-    border: 2px dashed black;
-    width: 30%;
-    border-radius: 3px;
-    margin: 20px;
-    text-align: center;
-    display: inline-block;
-    box-shadow: 5px 5px 10px;
-  }
-  
-  .container-coupon {
-    padding:  16px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-  }
-  
-  .container-coupon>h1{
-    font-size: 2rem;
-  }
-  
-  .expire {
-    background-color: rgba(235, 142, 114, 0.61);
-    border-radius: 5px;
-  }
-  
-  hr {
-    border: none;
-    border-top: 2px dashed rgb(185, 185, 185);
-    height: 3px;
-    width: 100%;
-  }
-  
-  .coupon-text{
-    font-size: small;
-    margin: 10px;
-  }
- 
-  .coupon-img{
-    width: 200px;
-     align-items: center;
-  }
-
- /* media queries */
-
- @media (min-width: 200px) {
-    .main-section{
-        display: inline-block;
-    }
-
-    .section-element{
-        font-size: 16px;
-        width: 100%;
-        align-items: left;
-        text-align: center;
-    }
-
-    .section-element img{
-        width: 250px;
-    }
- }
-
- @media(max-width: 700px){
-    .statistics{
-        display: inline-block;
-        height: 300px;
-        background-color: cadetblue;
-    }
-
-    .stat-element{
-        height: 200px;
-        background-color: cadetblue;
-    }
-
-    .footer-col .footer-map{
-        margin-top: 50px;
-        width: 150px;
-    }
-
-    .footer-col h4{
-        font-size: 12px;
-    }
-
-    .footer-col ul li a{
-        font-size: 12px;
-        float:left
-    }
-
-    .social-links{
-        display: inline-flex;
-    }
-
-    .history-element{
-        align-content: center;
-    }
-
-    .history-element img{
-        width: 250px;
-        display: block;
-    }
-
-    .carousell img{
-        width: 350px;
-        border: 1px solid #000;
-    }
-
-    .coupon{
-        width: 100%;
-    }
- }
+/*# sourceMappingURL=main.css.map */
